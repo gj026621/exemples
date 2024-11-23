@@ -101,10 +101,67 @@
   <definition xml:id="def-vrac">
     <statement>
       <p>
-        Un chat est un mammifère à quatre pattes.
+        Un chat est un mammifère à quatre pattes qui peut miauler.
       </p>
     </statement>
   </definition>
+
+  <figure xml:id="fig-tikz-chat">
+    <caption>Un chat avec TikZ en <latex /></caption>
+    <image width="50%" xml:id="chat">
+    <latex-image >
+      \begin{tikzpicture}
+
+      % Corps
+      \draw[fill=gray!30] (0,-3) ellipse (2cm and 3cm);
+      
+      % Tête
+      \draw[fill=gray!30] (0,0) circle (1.5cm);
+      
+      % Oreilles
+      \draw[fill=gray!30] (-1.2,1.2) -- (-0.5,2) -- (0,1.2) -- cycle; % oreille gauche
+      \draw[fill=gray!30] (1.2,1.2) -- (0.5,2) -- (0,1.2) -- cycle; % oreille droite
+      
+      % Intérieur des oreilles
+      \draw[fill=pink!50] (-1.1,1.4) -- (-0.5,1.9) -- (-0.1,1.4) -- cycle; % oreille gauche
+      \draw[fill=pink!50] (1.1,1.4) -- (0.5,1.9) -- (0.1,1.4) -- cycle; % oreille droite
+      
+      % Yeux
+      \draw[fill=white] (-0.6,0.5) circle (0.3cm); % oeil gauche
+      \draw[fill=white] (0.6,0.5) circle (0.3cm); % oeil droit
+      \draw[fill=black] (-0.6,0.5) circle (0.1cm); % pupille gauche
+      \draw[fill=black] (0.6,0.5) circle (0.1cm); % pupille droite
+      
+      % Nez
+      \draw[fill=pink] (0,0) -- (-0.2,-0.2) -- (0.2,-0.2) -- cycle;
+      
+      % Moustaches
+      \draw (-0.5,-0.3) -- (-1.5,-0.5); 
+      \draw (-0.5,-0.2) -- (-1.5,0); 
+      \draw (-0.5,-0.1) -- (-1.5,0.5); 
+      \draw (0.5,-0.3) -- (1.5,-0.5);
+      \draw (0.5,-0.2) -- (1.5,0);
+      \draw (0.5,-0.1) -- (1.5,0.5);
+      
+      % Bouche
+      \draw (0,-0.2) .. controls (-0.2,-0.6) and (-0.4,-0.4) .. (0,-0.8);
+      \draw (0,-0.2) .. controls (0.2,-0.6) and (0.4,-0.4) .. (0,-0.8);
+      
+      % Pattes avant
+      \draw[fill=gray!30] (-1.3,-5.5) rectangle (-0.8,-3); % patte gauche
+      \draw[fill=gray!30] (0.8,-5.5) rectangle (1.3,-3); % patte droite
+      
+      % Pattes arrière
+      \draw[fill=gray!30] (-1.8,-5.2) circle (0.5cm); % arrière gauche
+      \draw[fill=gray!30] (1.8,-5.2) circle (0.5cm); % arrière droite
+      
+      % Queue
+      \draw[fill=gray!30] (2,-3.5) .. controls (3,-2.5) and (4,-3.5) .. (3,-5) .. controls (2.5,-4.5) .. (2,-3.5);
+      
+      \end{tikzpicture}
+    </latex-image>
+    </image>
+  </figure>
 
   <table>
     <title>Une table</title>
