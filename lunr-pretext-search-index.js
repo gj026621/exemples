@@ -118,13 +118,58 @@ var ptx_lunr_docs = [
   "body": " On veut déterminer la quantité de chaleur nécessaire pour porter l'eau d'une bouilloire à ébullition alors qu'elle est à  61   .  Pour cela, on doit connaître la capacité thermique de l'eau à cette température, mais on ne dispose que des données suivantes : où est en    et est en      .  Estimez la valeur de à  61   à l'aide du polynôme interpolateur du degré spécifié en choisissant vos points grâce aux données ci-dessus, de façon à ce que les valeurs de soient les plus proches possible de  61   tout en l'encadrant :  avec un polynôme interpolateur de degré un;  avec un polynôme interpolateur de degré deux.          On choisit d'interpoler les points suivants : La forme de Lagrange du polynôme interpolateur est alors et on a On estime ainsi que vaut environ  4191,16     à  61   .     "
 },
 {
+  "id": "sec-tikz-utiles",
+  "level": "1",
+  "url": "sec-tikz-utiles.html",
+  "type": "Section",
+  "number": "1.2",
+  "title": "Quelques exemples utiles en TikZ",
+  "body": " Quelques exemples utiles en TikZ   Une grille       Trois fonctions       Une fonction définie par parties       Un beau parallélogramme      "
+},
+{
+  "id": "fig-tikz-grille",
+  "level": "2",
+  "url": "sec-tikz-utiles.html#fig-tikz-grille",
+  "type": "Figure",
+  "number": "1.2.1",
+  "title": "",
+  "body": " Une grille     "
+},
+{
+  "id": "fig-tikz-fonctions",
+  "level": "2",
+  "url": "sec-tikz-utiles.html#fig-tikz-fonctions",
+  "type": "Figure",
+  "number": "1.2.2",
+  "title": "",
+  "body": " Trois fonctions     "
+},
+{
+  "id": "fig-tikz-parties",
+  "level": "2",
+  "url": "sec-tikz-utiles.html#fig-tikz-parties",
+  "type": "Figure",
+  "number": "1.2.3",
+  "title": "",
+  "body": " Une fonction définie par parties     "
+},
+{
+  "id": "fig-tikz-parallelogramme",
+  "level": "2",
+  "url": "sec-tikz-utiles.html#fig-tikz-parallelogramme",
+  "type": "Figure",
+  "number": "1.2.4",
+  "title": "",
+  "body": " Un beau parallélogramme     "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": " Ce livre a été créé à l'aide de PreTeXt .  "
+  "body": " Ce livre a été créé avec PreTeXt .  "
 }
 ]
 
