@@ -77,6 +77,9 @@
         % Partie 2
         \addplot[domain=0:3, dashed, red] {-x^2 + x + 1};
         \addlegendentry{$f(x) = -x^2 +x + 1$ si $x>0$};
+
+        % Courbe en plus
+        \addplot[thick, smooth, green!50, tension=0.8] coordinates {(0,0) (1,1) (2,0.75) (2.5,2)};
         
         % Points de transition
         \addplot[only marks, mark=*, mark options={blue, fill=blue}] coordinates {(0,2)}; % Point plein
@@ -119,11 +122,12 @@
       \draw (1)--(9)--(4)--(8)--(1);
       \draw (7)--(8)--(5);
       \draw (2)--(9)--(10);
+      \draw [thick,blue] plot [smooth, tension=0.8] coordinates { (0,0) (1,1) (2,0.75) (3,2) (5,4)};
 
       % Légende
       \coordinate[label=below right: $(x_C{,}\,y_C)$] (11) at (1,3);
       \coordinate[label=above left: $(x_B{,}\,y_B)$] (12) at (4,1);
-      
+
       \end{tikzpicture}
     </latex-image>
     </image>

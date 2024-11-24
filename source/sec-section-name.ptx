@@ -216,38 +216,6 @@
     </proof>
   </theorem>
 
-  <figure xml:id="fig-tikz">
-    <caption>La fonction sinus avec TikZ en <latex /></caption>
-    <image width="85%" xml:id="sinus">
-    <latex-image >
-    \begin{tikzpicture}[scale=1.5, >=stealth]
-    % Axes
-    \draw[->] (-4.5,0) -- (4.5,0) node[below right] {$x$};
-    \draw[->] (0,-1.5) -- (0,1.5) node[left] {$y$};
-    
-    % Graduations sur les axes
-    \foreach \x in {-4,-3,-2,-1,1,2,3,4}
-        \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
-    \foreach \y in {-1,1}
-        \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
-
-    % Graphe de sin(x)
-    \draw[domain=-4.5:4.5,smooth,variable=\x,blue,thick] 
-        plot ({\x},{sin(\x r)});
-    
-    % Annotation de la courbe
-    \node[blue] at (-2,0.7) {$y = \sin(x)$};
-    
-    % Points marquants
-    \draw[dotted] (-3.14,0) node[below] {$-\pi$} -- (-3.14,{sin(-3.14 r)});
-    \draw[dotted] (3.14,0) node[below] {$\pi$} -- (3.14,{sin(3.14 r)});
-    \draw[dotted] (1.57,0) node[below] {$\frac{\pi}{2}$} -- (1.57,{sin(1.57 r)}) -- (0,1);
-    \draw[dotted] (-1.57,0) node[below] {$-\frac{\pi}{2}$} -- (-1.57,{sin(-1.57 r)}) -- (0,-1);
-    \end{tikzpicture}
-    </latex-image>
-    </image>
-  </figure>
-
   <exercises xml:id="exercises-vrac">
     <exercise>
       <statement>
