@@ -17,7 +17,7 @@
   <!-- <index> <title>Index</title> <index-list/> </index> -->
 
   <colophon>
-    <p> Ce livre a été créé à l'aide de <pretext />. </p>
+    <p> Ce livre a été créé avec <pretext />. </p>
   </colophon>
 </backmatter>
 
